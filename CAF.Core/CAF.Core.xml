@@ -1,0 +1,2744 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CAF.Core</name>
+    </assembly>
+    <members>
+        <member name="T:CAF.Core.Attribute.IsCarPartsMoreAttribute">
+            <summary>
+            Is Flag attribute
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.GuruConstant.HangireJobNameFormat">
+            <summary>
+            Hangire tarafında her eklenen bayinin verilerini çekmek için ayrı job oluşturulur bunların jon adlarının oluşturulması için format
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s1_category">
+            <summary>
+            Kategori yeni binek mi yoksa ticari mi?
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s2_make">
+            <summary>
+            Marka bilgileri ford, audi, fiat vb.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s3_model">
+            <summary>
+            Araç modelleri egea, focus, doblo vb.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s4_regmonth">
+            <summary>
+            Aracın üretildiği ay bilgisi. Örneğin araç 2020'de üretilmiş ancak 2020'nin hangi ayında olduğudur
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s5_regdate">
+            <summary>
+            Aracın üretildiği yıl 2020,2019,2018 vb.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s6_body">
+            <summary>
+            Kasa tipi sedan, hackback vb.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s7_facelift">
+            <summary>
+            Kasa gurubu. Yani 4-5 yılda bir yeni kasa çıkar bunların grupları 2014-2018 grubu gibi.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s8_seats">
+            <summary>
+            Genelde sabittir ve 5 kapıdır. Ancak nadirde olsa değişebilri bazılarında gönderilmez
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s12_engine">
+            <summary>
+            Motor bilgisi
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s13_wheeldrive">
+            <summary>
+            Tekerlek çekiş türü. Önden çekişli veya 4x4 çekişli
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s14_transmission">
+            <summary>
+            Vites bilgisi. Düz 6 vistes veya 5 otomatik
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s15_trim">
+            <summary>
+            Araç paketleri mirror, urban, easy vb.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.IndicataConstant.IndicataConstantReg.s16_equipment">
+            <summary>
+            Donanım
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Constant.StorageFolderConstant.AllFile">
+            <summary>
+            0=İlişki numarası, 1=Klasör tipi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Cost">
+            <summary>
+            Araç masrafı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.ExtraHardware">
+            <summary>
+            Extra Donanım tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.SpareKey">
+            <summary>
+            Anahatar var=0, Anahatar Yok=1
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.CarExpertType">
+            <summary>
+            0=Bilmiyorum, 1=Tramer Kayd var, 2=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.TramerAmount">
+            <summary>
+            Trame kaydı varsa tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.RightBackFender">
+            <summary>
+            Sağ Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.BackHood">
+            <summary>
+            Arka Kaput
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.LeftBackFender">
+            <summary>
+            Sol Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.RightBackDoor">
+            <summary>
+            Sağ Arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.RightFrontDoor">
+            <summary>
+            Sağ Ön Kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.BackBumper">
+            <summary>
+            Arka Tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Sill_Left">
+            <summary>
+            Marşpiyel Sol
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Sill_Right">
+            <summary>
+            Marşpiyel Sağ
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.MiddleMast_Left">
+            <summary>
+            Orta Direk Sol
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.MiddleMast_Right">
+            <summary>
+            Orta Direk Sağ
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.BackPanel">
+            <summary>
+            Arka panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.PoolSheet">
+            <summary>
+            Havuz Sacı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.FrontPanel">
+            <summary>
+            Ön panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Vin_RightFront">
+            <summary>
+            Sağ ön şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarInfo.Vin_LeftFront">
+            <summary>
+            sol ön şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.IndicataFirstCarValue">
+            <summary>
+            Araç bilgileri ve km gönderilip indicatanın ilk verdiği fiyat
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.IndicataSaleSpeed_All">
+            <summary>
+            Satış hızı tümü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.IndicataSaleSpeed_Similar">
+            <summary>
+            Satış hızı Benzer
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.IndicataRetail100">
+            <summary>
+            Parakende satış fiyatı / Pazar bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.RetailAmount">
+            <summary>
+            Bizim hesapladığımız Parakente fiyatı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.IndicataCalculatedCarValue">
+            <summary>
+            Osman Bey'in istediği hesaplamalar sonrası araç değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.CalculatedValueFormula">
+            <summary>
+            <see cref="P:CAF.Core.Entities.CarRequest.IndicataCalculatedCarValue"/> Nasıl hesaplandığını gösteren string. Örneğin 92.500 = 100.000 - 5.000 - 2.500
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.CalculatedValueJsonData">
+            <summary>
+            Hesaplama yapılırken kullanılan değerler. Örneğin yanlış hesaplama veya değerler değiştirilince bu değerin hangi veriyle hesaplandığına bakabilmek için
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.CalculatedBetaCarValueJson">
+            <summary>
+            Hesaplanmış yeni araç değerinin Json hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.CalculatedValueFormulaDetail">
+            <summary>
+            Hesaplamada indicata değeri üzerine azaltılan veya yükseltilen değerlerin listesi bulunur
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarRequest.SetEmployeeCarValue">
+            <summary>
+            Personelin kendi belirlediği aracın fiyatı. Personel kendine göre hesaplanmış dğerin bir miktar altında veya üstünde verdiği veya aracı satın aldığı fiyattır.
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Entities.CarStockStatu">
+            <summary>
+            Stoğumuzda olan araç
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_CustomerName">
+            <summary>
+            Listelemede Müşteri adı kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_CustomerPhone">
+            <summary>
+            Listelemede Müşteri Telefonu Kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_RequestType">
+            <summary>
+            Listelemede Talep tipi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_RequestDate">
+            <summary>
+            Listelemede Talep tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_CreditStatus">
+            <summary>
+            Listelemede Kredi durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_Description">
+            <summary>
+            Listelemede açıklama kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_DownPaymentStatus">
+            <summary>
+            Listelemede Kapora durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_DownPayment">
+            <summary>
+            Listelemede Kapora kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_Notary">
+            <summary>
+            Listelemede Noter Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_ExitStatus">
+            <summary>
+            Listelemede Çıkış Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowGridColumn_Status">
+            <summary>
+            Red iptaldeki durum bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowComponent_GuruExit">
+            <summary>
+            Gurudan çıkış yap butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowComponent_DownPayment">
+            <summary>
+            Kapora al butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.ShowComponent_AssignToUser">
+            <summary>
+            Sorumlu combobox'ı görünsün mü?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.CarStockStatu.SubRoles">
+            <summary>
+            UserSubRole enum ID'lerinin virgül ile birleştirilmiş halidir. Eğer menüde bir sub role varsa sadece o menüyü görebilir. Yani Kullanıcı alt rolü ile menünün alt rolleri kesişenler görülür.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.CarDescription">
+            <summary>
+            Her seferinde aracın tanımını çekmemek ve json üzerinden serileştirme işlemlerien bulaşmadan hızlı veri temini için kullanılır.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.CarPhoto">
+            <summary>
+            Griz üzeridne gösterilecek araç ön fotoğrafı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.CarStockStatuId">
+            <summary>
+            hangi durumda beklediğini gösteren alandır. TAblolarda dinamik olarak tutulur
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.AssignToUserId">
+            <summary>
+            Sorumlu personel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.RequestType">
+            <summary>
+            Talep türü. Örn: Peşin Alım, Kredi Alım, Takas Alım
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.Description">
+            <summary>
+            Araç üzerine yazılan genel açıklama
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.DownPaymentStatus">
+            <summary>
+            Kapora durumu => Alındı(1), alınmadı(0) şeklinde tutulur
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.DownPayment">
+            <summary>
+            Kapora
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.Notary">
+            <summary>
+            Noter işlemi yapılıp yapılmadığı durumdur.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.GuruExit">
+            <summary>
+            Gurudan çıkış durumu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.GuruCarRequest.Status">
+            <summary>
+            Red iptal durumu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.LicenseOwnerName">
+            <summary>
+            Ruhsat Sahibi Adi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.LicenseOwnerSurname">
+            <summary>
+            Ruhsat Sahibi Soyadı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.ChassisNumber">
+            <summary>
+            Şasi numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.EngineNumber">
+            <summary>
+            Motor Numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.ExaminationValidityDate">
+            <summary>
+            Muayne geçerlilik tariih
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.Bank">
+            <summary>
+            Banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.IBAN">
+            <summary>
+            IBAN
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.Amount">
+            <summary>
+            Tutar
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.IsKDV">
+            <summary>
+            KDV Var mı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.KDVRate">
+            <summary>
+            KDV Oranı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.IsPledge">
+            <summary>
+            Rehin Var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.PledgeAmount">
+            <summary>
+            Rehin tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.PledgeBank">
+            <summary>
+            Rehin olan banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.MTVDebt">
+            <summary>
+            MTV Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.MTVDebtAmount">
+            <summary>
+            MTV Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.TPCDebt">
+            <summary>
+            TPC Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.TPCDebtAmount">
+            <summary>
+            TPC Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.RegistrationDate">
+            <summary>
+            Tescil Tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.LicenseFileUrl">
+            <summary>
+            Tuhsat Dosyası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.TramerFileUrl">
+            <summary>
+            Tramer sorgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.PttKmFileUrl">
+            <summary>
+            PTT km horgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SaleDocument.ExpertPdfFileUrl">
+            <summary>
+            Expertiz PDF Dosyanın Url'i
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.HoodPainted">
+            <summary>
+            Kaput Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.HoodChanged">
+            <summary>
+            Kaput Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.TrunkPainted">
+            <summary>
+            Bagaj Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.TrunkChanged">
+            <summary>
+            Bagaj Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.CeilingPainted">
+            <summary>
+            Tavan Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Entities.SegmentDepreciation.CeilingChanged">
+            <summary>
+            Tavan Değişmiş
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarExpertEnum.Original">
+            <summary>
+            Orjinal
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarExpertEnum.Painted">
+            <summary>
+            Boyalı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarExpertEnum.Changed">
+            <summary>
+            Değişmiş
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarExpertEnum.LocalPainted">
+            <summary>
+            Lokal boyalı
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.CarExpertType">
+            <summary>
+            0=Bilmiyorum, 1=Tramer Kayd var, 2=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.RightBackFender">
+            <summary>
+            SAğ arka çamurluk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.BackHood">
+            <summary>
+            Arka kaput
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.LeftBackFender">
+            <summary>
+            Sol arka çamurluk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.RightBackDoor">
+            <summary>
+            SAğ arka kapı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.RightFrontDoor">
+            <summary>
+            SAğ ön kapı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.BackBumper">
+            <summary>
+            Arka tampon
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.Sill_Left">
+            <summary>
+            Sol Marşpiyel
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.MiddleMast_Left">
+            <summary>
+            Sol Orta direk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.BackPanel">
+            <summary>
+            ARka panel
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.PoolSheet">
+            <summary>
+            Havuz sacı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.Sill_Right">
+            <summary>
+            Sağ Marşpiyel
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.MiddleMast_Right">
+            <summary>
+            Sağ Orta direk
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.FrontPanel">
+            <summary>
+            Ön panel
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.Vin_RightFront">
+            <summary>
+            Sağ Ön Şase
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarPartEnum.Vin_LeftFront">
+            <summary>
+            Left Ön Şase
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.CarRequestResource">
+            <summary>
+            Talebin geldiği kaynak
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarRequestResource.DirectWebSite">
+            <summary>
+            Ditek web site üzerinden gelen talepler
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarRequestResource.Portal">
+            <summary>
+            Portal üzerinden gelen talepler
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CarRequestResource.Partner">
+            <summary>
+            İş ortakları üzerinden gelen talep
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.SegmentType">
+            <summary>
+            1=B, 2=C, 3=D, SUV-, 4=D+, 5=E SUV+
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.CreditApproveState.Waiting">
+            <summary>
+            Kredi başvuru yapılmış ancak sonuç bekleniyor durumudur
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.CreditApproveState.Approved">
+            <summary>
+            Kredi onaylandı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.CreditApproveState.Reject">
+            <summary>
+            Kredi başvurusu reddedildi
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.GuruStockModule.DownPaymentStatu">
+            <summary>
+            Kapora durumu
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.DownPaymentStatu.NotReceived">
+            <summary>
+            Kapora alınmadı 
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.DownPaymentStatu.Received">
+            <summary>
+            Kapora alındı
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.GuruStockModule.GuruCarRequestStatu">
+            <summary>
+            Durum kolonu içindir. Şuanda Red/ iptal için kullanılır
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.GuruCarRequestStatu.Reject">
+            <summary>
+            Red
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.GuruCarRequestStatu.Cancel">
+            <summary>
+            İptal
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.GuruStockModule.NotaryStatu">
+            <summary>
+            Noter işlemi yapılıp yapılmadığının tutulduğu durumdur. Boolean olarak tutulabilri ancak ilerde ek geliştirme istemeleri durumu için enum yapılmıştır.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.NotaryStatu.NotDo">
+            <summary>
+            Yapılmadı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruStockModule.NotaryStatu.Do">
+            <summary>
+            Yapıldı
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.GuruCarListType">
+            <summary>
+            Araç listeme türü. Yani sıfır veya ikinci ek listelem türü
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarListType.All">
+            <summary>
+            Kısıtlama olmadan tüm araçların listelenmesi
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarListType.OnlyUsedCar">
+            <summary>
+            Sadece İkinci el araçlar
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarListType.OnlyNewCar">
+            <summary>
+            Sadece sıfır araçların listelenmesi
+            </summary>
+        </member>
+        <member name="T:CAF.Core.Enums.GuruCarRequestType">
+            <summary>
+            Stoklardaki araçların talep türleri. Araçlar sisteme ilk olarak düştüğü türdür. ÖRneğin siteden takas ile işlem yaptıysa türü takas olur ancak bunun üstüne kredide kullanabilir. Aynı şekilde Sisteme ilk kredi ile seçerek geldiyse kredi olur ama üstünede kendi aracını takas ile saydırabilir. Önemli olan sisteme ilk düştüğü durumdur.
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarRequestType.CashPurchase">
+            <summary>
+            Nakit Satın Alma
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarRequestType.CreditPurchase">
+            <summary>
+            Kredili Satın Alma
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.GuruCarRequestType.SwapPurchase">
+            <summary>
+            Takas Satın Alma
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CreateUserType.Created">
+             <summary>
+            Müşteri için Kullanıcı oluşturuldu
+             </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CreateUserType.ExistUser">
+            <summary>
+            Zaten kullanıcı mevcut
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.CreateUserType.Fail">
+            <summary>
+            Kullanıcı oluşturma başarısız
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.Today">
+            <summary>
+            Bugün
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.ThisWeek">
+            <summary>
+            Bu Hafta
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.ThisMonth">
+            <summary>
+            Bu Ay
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.LastThreeMonths">
+            <summary>
+            Son 3 ay
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.LastSixMonths">
+            <summary>
+            Son 6 ay
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.ThisYear">
+            <summary>
+            Bu Yıl
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DashboardRequestType.Custom">
+            <summary>
+            Özel
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.DbState.HardDelete">
+            <summary>
+            Durumu bu şekilde update edilen kayıtlar silinir
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ErrorType.Critical">
+            <summary>
+            Kritik kırmızı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ErrorType.Validation">
+            <summary>
+            Validation
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ErrorType.Warning">
+            <summary>
+            Uyarı
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.Gender.Male">
+            <summary>
+            Erkek
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.Gender.Female">
+            <summary>
+            Kadın
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ExistFileAction.None">
+            <summary>
+            Birşey yapma
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ExistFileAction.Overwrite">
+            <summary>
+            Var olan dosyanın üstüne yaz
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.ExistFileAction.Rename">
+            <summary>
+            Aynı dosyadan varsa sonuna (1) gibi ek ekleyerek adını değiştirerek yükle
+            </summary>
+        </member>
+        <member name="F:CAF.Core.Enums.UserRole.SystemAdmin">
+            <summary>
+            Tam yetkili kullanıcı
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Extensions.CommonExtensions.GetConstantFile(System.String)">
+            <summary>
+            CAF.CoreConstant.Files içindeki dosyanın stream halini verir
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Extensions.CommonExtensions.GetStringByConstantFile(System.String)">
+            <summary>
+            CAF.CoreConstant.Files içindeki dosyanın içindeki metinini verir
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Extensions.InterfaceExtensions.SetProperties(CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns,CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns)">
+            <summary>
+            Grid kolonları ve buton aksiyonlarını değerlerini hedef nesneye atama yapar. Dönen değer düzenlenmiş hedef nesnesidir ve aynı referans kodu ile nesne işlenir
+            </summary>
+            <param name="source"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CAF.Core.Helper.ConnectionStringsLayoutRenderer.AppSettings">
+            <summary>
+            Global configuration. Used if it has set
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Helper.ConnectionStringsLayoutRenderer.Name">
+            <summary>
+             The AppSetting name.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Helper.ConnectionStringsLayoutRenderer.Default">
+            <summary>
+             The default value to render if the AppSetting value is null.
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Helper.ConnectionStringsLayoutRenderer.Append(System.Text.StringBuilder,NLog.LogEventInfo)">
+            <summary>
+            Renders the specified application setting or default value and appends it to the specified <see cref="T:System.Text.StringBuilder" />.
+            </summary>
+            <param name="builder">The <see cref="T:System.Text.StringBuilder"/> to append the rendered data to.</param>
+            <param name="logEvent">Logging event.</param>
+        </member>
+        <member name="T:CAF.Core.Helper.ObjectCopier">
+            <summary>
+            Reference Article http://www.codeproject.com/KB/tips/SerializedObjectCloner.aspx
+            Provides a method for performing a deep copy of an object.
+            Binary Serialization is used to perform the copy.
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Helper.ObjectCopier.Clone``1(``0)">
+            <summary>
+            Perform a deep Copy of the object.
+            </summary>
+            <typeparam name="T">The type of object being copied.</typeparam>
+            <param name="source">The object instance to copy.</param>
+            <returns>The copied object.</returns>
+        </member>
+        <member name="P:CAF.Core.Interface.ISession.IsAccessToken">
+            <summary>
+            Bu token access token ile üretilme durumu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Interface.ISession.Token">
+            <summary>
+            Header'da oaln token değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Interface.ISession.LoginId">
+            <summary>
+            Oturum bozlı cache verilerin için oturum numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Interface.ISession.SubRoles">
+            <summary>
+            Kullanıcı üzerine tanımlanmış alt roller. 
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Repository.IGuruCarRequestRepository.GetCarStockRequestCountByMenuId(System.Guid)">
+            <summary>
+            Menü durum ID'sine göre kaç kayıt olduğunu döndürür. Örneğin menü silinecekse öncelikle o durumda kaç kayıt olduğuna bakılır ve kullanılıyorsa silinmeye izin verilmemesi için kullanılabilir.
+            </summary>
+            <param name="stockStatuId"></param>
+            <returns>Gönderilen menü üzerindeki kayıt sayısı</returns>
+        </member>
+        <member name="M:CAF.Core.Repository.IGuruCarRequestRepository.GetCarStockRequestMenuTransfer(System.Guid,System.Guid)">
+            <summary>
+            Toplu olarak menü üzerinde duran kayıtların tek seferde aktarılmasını sağlar.
+            </summary>
+            <param name="oldStockStatuId">Eski menü Id. Olup olmamasına bakılmaz. Çünkü olmayan bir menünün üzerinde zaten kayıt durmaz</param>
+            <param name="newStockStatuId">Aktarılacak hedef. Eğer hedef yoksa hata döndürür</param>
+            <returns>Aktarılan kayıt sayısı</returns>
+        </member>
+        <member name="M:CAF.Core.Repository.IGuruIntegrationRepository.GetGuruAracListesi(System.String,System.String)">
+            <summary>
+            Guru'ya istek atarak tüm araçları döner.
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Service.ICarStockStatuService.GetCarStockStatu(System.Guid)">
+            <summary>
+            Dinamik olan guru stok durumunu in-memory cache'den getrir.
+            <see cref="M:CAF.Core.Service.ICarStockStatuService.GetCarStockStatus"/> üzerinden çeker. Null dönmez
+            
+            Gönderilen Id değerine sahip veri bulunamaz ise uygun mesaj ile hata fırlatır. <seealso cref="T:CAF.Core.Exception.BadRequestException"/>
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Service.ICarStockStatuService.GetIdByRouteName(System.String)">
+            <summary>
+            Dinamik olan guru stok durumunu in-memory cache'den getrir.
+            <see cref="M:CAF.Core.Service.ICarStockStatuService.GetCarStockStatus"/> üzerinden çeker. Null dönmez
+            
+            Gönderilen rote değerine sahip veri bulunamaz ise uygun mesaj ile hata fırlatır. <seealso cref="T:CAF.Core.Exception.BadRequestException"/>
+            </summary>
+            <param name="routeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Service.ICarStockStatuService.GetCarStockStatus">
+            <summary>
+            Cache üzerinden tüm durumları döner
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.Core.Service.IHangfireJobService.ClearErrorLog">
+            <summary>
+            Mongo üzerindeki hata loglarını appconfig üzerinde belirtilen süreden fazla olanları temizler
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Service.IHangfireJobService.ClearRequestLog">
+            <summary>
+            Mongo üzerindeki istek loglarını appconfig üzerinde belirtilen süreden fazla olanları temizler
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Service.IHangfireJobService.RefreshGuruDataByDealer(System.Guid)">
+            <summary>
+            Guru kullanıcı bazlı verileri güncelleme işlemi yapılmaktadır.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:CAF.Core.Service.ISettingService.HangFireJonRegister">
+            <summary>
+            Otomatik hangfire joblarının oluşturulması
+            </summary>
+        </member>
+        <member name="M:CAF.Core.Service.IUserService.UserRoleControl(CAF.Core.Enums.UserRole)">
+            <summary>
+            Oturum açan kullanıcının hedeflenen kullanıcı rolünde yetkisi varmı kontrol etmektedir.
+            </summary>
+            <param name="targetRole"></param>
+        </member>
+        <member name="M:CAF.Core.Service.IUserService.RemoveProfileImage(System.Int64)">
+            <summary>
+            Personelin profil resmini kaldırma
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CAF.Core.Utilities.IAppSettings.RequestLogExpireDay">
+            <summary>
+            istek loglarında belirtilen gün sayısını aşanları silinir. Mongo üzerinde 512MB kotasını aştığı için kullanılır.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.Utilities.IAppSettings.ErrorLogExpireDay">
+            <summary>
+            hata loglarında belirtilen gün sayısını aşanları silinir. Mongo üzerinde 512MB kotasını aştığı için kullanılır.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.BlobStorage.Request.StorageUploadRequest.Base64String">
+            <summary>
+            Yüklenecek dosya
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.BlobStorage.Request.BaseStorageUploadRequest.FolderName">
+            <summary>
+            Dosyanın yükleneceği dizin
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.BlobStorage.Request.BaseStorageUploadRequest.FileName">
+            <summary>
+            Dosyanın adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.BlobStorage.Request.BaseStorageUploadRequest.ExistFileAction">
+            <summary>
+            Aynı dosyadan varsa üzerine yazsın mı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.BlobStorage.Request.StorageUploadBytesRequest.FileBytes">
+            <summary>
+            Yüklenecek dosya bytes
+            </summary>
+        </member>
+        <member name="T:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail">
+            <summary>
+            Enumların 0=Orjinal, 1=Boyalı, 2=Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Cost">
+            <summary>
+            Masraf
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.ExtraHardware">
+            <summary>
+            Extra Donanım
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.SpareKey">
+            <summary>
+            Yedek Anahtar var=0, Yedek Anahtar Yok=1
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.CarExpertType">
+            <summary>
+            0=Bilmiyorum, 1=Tramer Kayd var, 2=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.TramerAmount">
+            <summary>
+            Trame kaydı varsa tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.RightBackFender">
+            <summary>
+            Sağ Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.BackHood">
+            <summary>
+            Arka Kaput
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.LeftBackFender">
+            <summary>
+            Sol Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.RightBackDoor">
+            <summary>
+            Sağ Arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.RightFrontDoor">
+            <summary>
+            Sağ Ön Kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.BackBumper">
+            <summary>
+            Arka Tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Sill_Left">
+            <summary>
+            Sol Marşpiyel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Sill_Right">
+            <summary>
+            Sağ Marşpiyel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.MiddleMast_Left">
+            <summary>
+            Orta Direk Sol
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.MiddleMast_Right">
+            <summary>
+            Orta Direk Sağ
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.BackPanel">
+            <summary>
+            Arka panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.FrontPanel">
+            <summary>
+            Ön Panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.PoolSheet">
+            <summary>
+            Havuz sacı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Vin_RightFront">
+            <summary>
+            Sağ Ön Şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarDetail.Dto.CarExpertDetail.Vin_LeftFront">
+            <summary>
+            Sol Ön Şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.Cost">
+            <summary>
+            Masraf
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.SpareKey">
+            <summary>
+            Yedek Anahtar var=0, Yedek Anahtar Yok=1
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.CarExpertType">
+            <summary>
+            0=Bilmiyorum, 1=Tramer Kayd var, 2=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.TramerAmount">
+            <summary>
+            Trame kaydı varsa tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.RightBackFender">
+            <summary>
+            Sağ Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.BackHood">
+            <summary>
+            Arka Kaput
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.LeftBackFender">
+            <summary>
+            Sol Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.RightBackDoor">
+            <summary>
+            Sağ Arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.RightFrontDoor">
+            <summary>
+            Sağ Ön Kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Dto.CarInfoCalculateDto.BackBumper">
+            <summary>
+            Arka Tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetCarCostRequest.Cost">
+            <summary>
+            Aracın masrafı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetCarCostRequest.CostDescription">
+            <summary>
+            Masraf Açıklaması
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExpertItemRequest.CarRequestId">
+            <summary>
+            Request Id yaniaraç detayının açıldığı Id ile aynı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExpertItemRequest.CarExpertType">
+            <summary>
+            0=Orjinal, 1=Boyalı, 2=Değişmiş, 3=Local boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExpertItemRequest.CarExpertKey">
+            <summary>
+            Parça anahtarı RightBackFender,RightFrontDoor,Ceiling vb.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExpertItemRequest.Count">
+            <summary>
+            Eğer adetli olan ise bu gönderilmelidir
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExtraHardwareRequest.ExtraHardware">
+            <summary>
+            Extra donanım tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetExtraHardwareRequest.ExtraHardwareDescription">
+            <summary>
+            Extra donanım Açıklaması
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.SetSpareKeyRequest.SpareKey">
+            <summary>
+            Yedek Anahtar var=0, Yedek Anahtar Yok=1
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.UpdateTramerRequest.CarExpertType">
+            <summary>
+            0=Bilmiyorum, 1=Tramer Kayd var, 2=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Request.UpdateTramerRequest.TramerAmount">
+            <summary>
+            Trame kaydı varsa tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.categoryCaption">
+            <summary>
+            Kategori = Örneğin "Ticari"
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.makeCaption">
+            <summary>
+            Model => ÖRneğin Ford
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.modelCaption">
+            <summary>
+            Model => ÖRneğin Focus
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.regdateCaption">
+            <summary>
+            Üretim Tarihi 2020 mesela
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.bodyCaption">
+            <summary>
+            Kasa tipi => ÖRneğin  sedan veya hackback
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.bodyImageLinks">
+            <summary>
+            KAsatipinin resimleri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.faceliftCaption">
+            <summary>
+            Kasa Grubu => Örneğin "2014-2018"
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.seatsCaption">
+            <summary>
+            Kapı => Örneğin "5 Kapı"
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.engineCaption">
+            <summary>
+            Motor
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.wheeldriveCaption">
+            <summary>
+            Çekiş türü => Önden çekiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.transmissionCaption">
+            <summary>
+            Vites => Düz 6, Otomatik
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.trimCaption">
+            <summary>
+            Paket => Mirror, Eays, Icon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.equipmentCaption">
+            <summary>
+            Donanım bilgisi ama her araçta olmaz Örneğin focus'da vardır
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Cost">
+            <summary>
+            Araç masrafı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.CostDescription">
+            <summary>
+            Masraf detayları / açıklaması
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.ExtraHardware">
+            <summary>
+            Extra Donanım tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.ExtraHardwareDescription">
+            <summary>
+            Extra Donanım tutarı açıklaması
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.SpareKey">
+            <summary>
+            Yedek Anahtar var=0, Yedek Anahtar Yok=1
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.CarExpertType">
+            <summary>
+            1=Bilmiyorum, 2=Tramer Kayd var, 3=Tramer Kaydı YOK
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.TramerAmount">
+            <summary>
+            Trame kaydı varsa tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.RightBackFender">
+            <summary>
+            Sağ Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.BackHood">
+            <summary>
+            Arka Kaput
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.LeftBackFender">
+            <summary>
+            Sol Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.RightBackDoor">
+            <summary>
+            Sağ Arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.RightFrontDoor">
+            <summary>
+            Sağ Ön Kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.BackBumper">
+            <summary>
+            Arka Tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Sill_Left">
+            <summary>
+            Marşpiyel Sol
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Sill_Right">
+            <summary>
+            Marşpiyel Sağ
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.MiddleMast_Left">
+            <summary>
+            Orta Direk Sol
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.MiddleMast_Right">
+            <summary>
+            Orta Direk Sağ
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.BackPanel">
+            <summary>
+            Arka panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.PoolSheet">
+            <summary>
+            Havuz Sacı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.FrontPanel">
+            <summary>
+            Ön panel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Vin_RightFront">
+            <summary>
+            Sağ ön şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.Vin_LeftFront">
+            <summary>
+            sol ön şase
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.IndicataFirstCarValue">
+            <summary>
+            İlk olarak indicatanın verdiği fiyat
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.IndicataCalculatedCarValue">
+            <summary>
+            Marka marjı ve expert hesaplaması sonrası fiayt
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.CalculatedValueFormula">
+            <summary>
+            Yapılan hesaplamanın formülü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.CalculatedValueFormulaDetail">
+            <summary>
+            Hesaplama sonrası sadece aracın değerini düşüren ve arttıran kalemleri listeler
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.CarBetaValue">
+            <summary>
+            Yeni formül yapısının nesnesi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.SetEmployeeCarValue">
+            <summary>
+            PErsonelin girdiği fiyat
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.IndicataSaleSpeed_All">
+            <summary>
+            Satış hızı tümü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.IndicataSaleSpeed_Similar">
+            <summary>
+            Satış hızı Benzer
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.IndicataRetail100">
+            <summary>
+            Parakende satış fiyatı / Pazar bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarInfo.Response.CarInfoResponse.RetailAmount">
+            <summary>
+            Bizim hesapladığımız parekente fiyatı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.CarFirstValue">
+            <summary>
+            Hesaplanmamış ham hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.Total">
+            <summary>
+            Hesaplanmış aracın değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.SegmentDepreciationId">
+            <summary>
+            ARacın segment bazlı boyalı değişmiş verilerinin çekildiği Id
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.Segment">
+            <summary>
+            Araç hesaplanırken baz alınan segment
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.MakeMarjId">
+            <summary>
+            Araın marka bazlı marj alınan db Id
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.MakeValue">
+            <summary>
+            Sadece Marka bazlı fiayt azalma veya yükseltme uygulanan değeri 
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.MakePercent">
+            <summary>
+            Marka bazlı yüzde uygulanırken kullanılan yüzde
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.MakeId">
+            <summary>
+            Indicata Marka Id
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.BackHood">
+            <summary>
+            Arka Kaput
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.LeftBackFender">
+            <summary>
+            Sol Arka çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.RightBackDoor">
+            <summary>
+            Sağ Arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.RightFrontDoor">
+            <summary>
+            Sağ Ön Kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.Ceiling">
+            <summary>
+            Tavan
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.LeftBackDoor">
+            <summary>
+            Sol arka kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.LeftFrontDoor">
+            <summary>
+            Sol ön kapı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.RightFrontFender">
+            <summary>
+            Sağ ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.EngineBonnet">
+            <summary>
+            Motor kaputu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.LeftFrontFender">
+            <summary>
+            Sol ön çamurluk
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.FrontBumper">
+            <summary>
+            Ön tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Dto.CarValueCalculateDto.BackBumper">
+            <summary>
+            Arka Tampon
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Request.SetAppointmentRequest.AppointmentDate">
+            <summary>
+            Randevu Tarihi (Tarih Saat birlikte)
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Request.SetAppointmentRequest.AppointmentCompany">
+            <summary>
+            Randevunun olduğu expertiz şirketi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Request.SetAppointmentRequest.AppointmentAddress">
+            <summary>
+            Şirketin/randevunun olduğu adres
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Request.SetCarOdometerRequest.Odometer">
+            <summary>
+            Yeni Km değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Request.SetCarPlateRequest.Plate">
+            <summary>
+            Yeni Km değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.AppointmentItem.Id">
+            <summary>
+            Aracın talep numarası bu Id ile araç detayına gidilebilir
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CalculatedCarValueResponse.CalculatedValueFormulaDetail">
+            <summary>
+            Hesaplama sonrası sadece aracın değerini düşüren ve arttıran kalemleri listeler
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarRequestGridResponse.CarBetaValue">
+            <summary>
+            Yeni formül yapısının nesnesi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarValuationResponse.IndicataSaleSpeed_All">
+            <summary>
+            Satış hızı tümü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarValuationResponse.IndicataSaleSpeed_Similar">
+            <summary>
+            Satış hızı Benzer
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarValuationResponse.IndicataRetail100">
+            <summary>
+            Parakende satış fiyatı / Pazar bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarValuationResponse.CarBetaValue">
+            <summary>
+            Yeni formül yapısının nesnesi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.CarValuationResponse.RetailAmount">
+            <summary>
+            Hesaplanan parekente fiyatı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarRequest.Response.RequestLogIpReponse.Id">
+            <summary>
+            Random
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.Name">
+            <summary>
+            Menüdeki görünen adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.RouteName">
+            <summary>
+            WEb sitede Route url
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.Frozen">
+            <summary>
+            Bu duruma atanan kayıt tekrar farklı bir duruma alınamaz mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.Order">
+            <summary>
+            Menü sıra numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.SubRoles">
+            <summary>
+            Özel menülerde alt rol seçilir ve bu menüyü sadece o roel ait olanlar görür.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_CustomerName">
+            <summary>
+            Listelemede Müşteri adı kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_CustomerPhone">
+            <summary>
+            Listelemede Müşteri Telefonu Kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_RequestType">
+            <summary>
+            Listelemede Talep tipi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_RequestDate">
+            <summary>
+            Listelemede Talep tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_CreditStatus">
+            <summary>
+            Listelemede Kredi durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_Description">
+            <summary>
+            Listelemede açıklama kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_DownPaymentStatus">
+            <summary>
+            Listelemede Kapora durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_DownPayment">
+            <summary>
+            Listelemede Kapora kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_Notary">
+            <summary>
+            Listelemede Noter Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_ExitStatus">
+            <summary>
+            Listelemede Çıkış Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_Status">
+            <summary>
+            Red iptaldeki durum bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_AdsRef">
+            <summary>
+            Reklam REF
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_AdsSource">
+            <summary>
+            Reklam Source
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_AdsMedium">
+            <summary>
+            Reklam Medium
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_AdsCampaign">
+            <summary>
+            Reklam Campaign
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowGridColumn_AdsFull">
+            <summary>
+            Reklam bilgilerini tek kolonda birlştirilmiş hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowComponent_GuruExit">
+            <summary>
+            Gurudan çıkış yap butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowComponent_DownPayment">
+            <summary>
+            Kapora al butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockStatuDto.ShowComponent_AssignToUser">
+            <summary>
+            Sorumlu combobox'ı görünsün mü?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_CustomerName">
+            <summary>
+            Listelemede Müşteri adı kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_CustomerPhone">
+            <summary>
+            Listelemede Müşteri Telefonu Kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_RequestType">
+            <summary>
+            Listelemede Talep tipi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_RequestDate">
+            <summary>
+            Listelemede Talep tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_CreditStatus">
+            <summary>
+            Listelemede Kredi durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_Description">
+            <summary>
+            Listelemede açıklama kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_DownPaymentStatus">
+            <summary>
+            Listelemede Kapora durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_DownPayment">
+            <summary>
+            Listelemede Kapora kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_Notary">
+            <summary>
+            Listelemede Noter Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_ExitStatus">
+            <summary>
+            Listelemede Çıkış Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_Status">
+            <summary>
+            Red iptaldeki durum bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_AdsRef">
+            <summary>
+            Reklam REF
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_AdsSource">
+            <summary>
+            Reklam Source
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_AdsMedium">
+            <summary>
+            Reklam Medium
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_AdsCampaign">
+            <summary>
+            Reklam Campaign
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowGridColumn_AdsFull">
+            <summary>
+            Reklam bilgilerini tek kolonda birlştirilmiş hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowComponent_GuruExit">
+            <summary>
+            Gurudan çıkış yap butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowComponent_DownPayment">
+            <summary>
+            Kapora al butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.ICarStockMenuColumns.ShowComponent_AssignToUser">
+            <summary>
+            Sorumlu combobox'ı görünsün mü?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_CustomerName">
+            <summary>
+            Listelemede Müşteri adı kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_CustomerPhone">
+            <summary>
+            Listelemede Müşteri Telefonu Kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_RequestType">
+            <summary>
+            Listelemede Talep tipi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_RequestDate">
+            <summary>
+            Listelemede Talep tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_CreditStatus">
+            <summary>
+            Listelemede Kredi durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_Description">
+            <summary>
+            Listelemede açıklama kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_DownPaymentStatus">
+            <summary>
+            Listelemede Kapora durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_DownPayment">
+            <summary>
+            Listelemede Kapora kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_Notary">
+            <summary>
+            Listelemede Noter Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_ExitStatus">
+            <summary>
+            Listelemede Çıkış Durumu kolonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_Status">
+            <summary>
+            Red iptaldeki durum bilgisi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_AdsRef">
+            <summary>
+            Reklam REF
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_AdsSource">
+            <summary>
+            Reklam Source
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_AdsMedium">
+            <summary>
+            Reklam Medium
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_AdsCampaign">
+            <summary>
+            Reklam Campaign
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowGridColumn_AdsFull">
+            <summary>
+            Reklam bilgilerini tek kolonda birlştirilmiş hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowComponent_GuruExit">
+            <summary>
+            Gurudan çıkış yap butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowComponent_DownPayment">
+            <summary>
+            Kapora al butonu görünsün mü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.CarStockMenuColumns.ShowComponent_AssignToUser">
+            <summary>
+            Sorumlu combobox'ı görünsün mü?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.Response.CarStockDataWithColumnsResponse.Data">
+            <summary>
+            Verilerin olduğu liste
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.CarStockStatu.Response.CarStockStatuResponse.Order">
+            <summary>
+            Menü sıra numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Common.Request.BaseSearchRequest.SearchText">
+            <summary>
+            Arame metni. En az 3 karakter gönderilmelidir
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Common.Request.BaseSearchRequest.MaxRecord">
+            <summary>
+            Listenecek max kayıt sayısı. Min 3 max 20
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Common.Request.UploadFileRequest.FileBase64">
+            <summary>
+            Dosyanın base64 string hali
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Common.Request.UploadFileRequest.FileName">
+            <summary>
+            Dosya adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest.GuruId">
+            <summary>
+            Guru numarası. Araçlar guru üzerinden geldiği için benzersiz numarasını aradan temin ediyoruz
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest.FullName">
+            <summary>
+            Müşteri tam adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest.PhoneNumber">
+            <summary>
+            Müşterinin telefon numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest.Email">
+            <summary>
+            Opsiyoneldir. Müşterinin mail adresi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest.RequestType">
+            <summary>
+            Talep türü. WEb site üzerinden hangi buton ile talep oluşturdu ise onun gönderilmesi gereklidir. Gönderilmez ise CachePurchase(0) yani nakit satın alma olarak yansıyacaktır.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.Id">
+            <summary>
+            Benzersiz ID
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CreateDate">
+            <summary>
+            Talep Tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.GuruId">
+            <summary>
+            Aracın GURU üzerindeki benzersiz numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CustomerPhone">
+            <summary>
+            Müşteri Tel
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CustomerName">
+            <summary>
+            Müşteri Tam adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CustomerMail">
+            <summary>
+            Müşteri mail adresi. NOT: bu bilgiyi hiç bir yerde doldurmadık genelde boş olur
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.Photo">
+            <summary>
+            Aracın ön izleme fotoğrafının linki. Base64 veya byte array olmaz. Çünkü gridden başımsız resim yüklenmesi gerekir. Aksi taktirde grid üzerinde yavaşlama olabilir.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CarDetail">
+            <summary>
+            Aracın tanım bilgisi. Marka model renk km vb. öneml bilgilein tek metin halindeki hali. Diğer bir değiş ise sahibinden gibi sistemlerdeki ilan başlığı gibi bir metin gelir.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.RequestType">
+            <summary>
+            Talep türü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.CreditApproveState">
+            <summary>
+            Kredi onay başvurusu durumu. Kredi ile alım olup bir kredi başvurusu olduğunda bu alan dolu gelir aksi taktirde veri olmadığı için null gelecektir.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.Description">
+            <summary>
+            Araç üzerine yazılan genel açıklama
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.DownPaymentStatus">
+            <summary>
+            Kapora durumu => Alındı(1), alınmadı(0) şeklinde tutulur
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.DownPayment">
+            <summary>
+            Kapora
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.Notary">
+            <summary>
+            Noter işlemi yapılıp yapılmadığının tutulduğu yer
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.GuruExit">
+            <summary>
+            Gurudan çıkış durumu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.GuruCarRequest.Response.GuruCarRequestResponse.Status">
+            <summary>
+            Guru çıkış durumu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.Makes">
+            <summary>
+            Seçili Marka Adları
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.MinKm">
+            <summary>
+            Min km
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.MaxKm">
+            <summary>
+            Max km
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.Fuels">
+            <summary>
+            Yakıt
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.Transmissions">
+            <summary>
+            Vites
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.Bodies">
+            <summary>
+            Kasa
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.MinBudget">
+            <summary>
+            Min bütçe
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.MaxBudget">
+            <summary>
+            Max bütçe
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.Order">
+            <summary>
+            None = 0,
+            DateFirstNew(Tarihe göre önce yeni) = 1,
+            DateFirstOld(Tarihe göre önce eski) = 2,
+            AmountFirstLow(Fiyata göre önce düşük) = 3,
+            AmountFirstHigh(Fiayata göre önce yüksek) = 4
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.ListType">
+            <summary>
+            Sıfır, ikinci el veya tüm araçların listelemk için kullanılır.
+            0 = Hepsini
+            1 = Sadece İkinci el
+            2 = Sadece sıfır
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest.ModelName">
+            <summary>
+            Özellikle bir model listelenmek istendiğinde modelin adı gönderrilir Focus, Corolla, Egea vb.
+            Bunu sıfır araçlarda model seçildikten sonra kullanılması için yapılmıştır. Örneğin Markalardan toyota seçilmiştir. Bir sonraki ekranda sıfır modeller kutu kutu gelikten sonra corolla seçildiğinde buraya ModelName alanına sabit şekilde Corolla yazarsan soltaki tüm filtreleme toyota corolla üzerinden yapılır.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Helper.CarValueAdvancedCalculater.CarValueAdvancedCalculaterModel.IndicataFirstValue">
+            <summary>
+            Max satın alma fiyatı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Helper.CarValueAdvancedCalculater.CarValueAdvancedCalculaterModel.IndicataRetail100">
+            <summary>
+            Parakente fiyatı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Indicata.Reponse.IndicataFinishResponse.CouldPrice">
+            <summary>
+            Fiyat verebilir
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Mail.SendMailModel.AppealUserName">
+            <summary>
+            Hitap bölümü
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Mail.SendMailModel.Subject">
+            <summary>
+            Mail konusu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Mail.SendMailModel.HtmlContent">
+            <summary>
+            html mail içeriği
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Mail.SendMailModel.ButtonLink">
+            <summary>
+            Buton linki
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Mail.SendMailModel.ButtonName">
+            <summary>
+            Butonun görünen adı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Request.NewCarModelRequest.ModelName">
+            <summary>
+            Model adıdır. Örn: Corolla, Yaris vb.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Request.NewCarModelRequest.MakeName">
+            <summary>
+            Model adı Örn: Toyota, Volvo vb.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Request.NewCarModelRequest.IconBase64">
+            <summary>
+            Gösterilecek resmin base64 formatındaki hali
+            </summary>
+        </member>
+        <member name="T:CAF.Core.ViewModel.NewCarModel.Response.NewCarModelResponse">
+            <summary>
+            WEbsite üzerinde sıfır araçların marka sçeiminden sonra modellerin listelendiği ekranda görünecek araç modellerinin resimleri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Response.NewCarModelResponse.Id">
+            <summary>
+            DB'deki benzersiz numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Response.NewCarModelResponse.MakeName">
+            <summary>
+            Marka bazlı filtrelemerde kullanmak için marka adıdır. Zaten model adı benzersizdir ancak bu tarz filtrelemler için gerekldir.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Response.BaseNewCarModelResponse.ModelName">
+            <summary>
+            Model adı focus, corolla, egea vb.
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.NewCarModel.Response.BaseNewCarModelResponse.IconPath">
+            <summary>
+            Model seçimlerindeki aracın lansman iconu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Public.Request.SetRequestDetailRequest.RequestId">
+            <summary>
+            Talep numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Public.Request.SetRequestDetailRequest.Files">
+            <summary>
+            Araç fotoğrafları
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Public.Request.SetRequestDetailRequest.CarExpertDetail">
+            <summary>
+            Araç expertiz bilgileri yani boyalı, orjinal değişmiş bilgilerinin detayları
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.CarRequestId">
+            <summary>
+            Talep Id
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.LicenseOwnerName">
+            <summary>
+            Ruhsat Sahibi Adi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.LicenseOwnerSurname">
+            <summary>
+            Ruhsat Sahibi Soyadı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.ChassisNumber">
+            <summary>
+            Şasi numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.EngineNumber">
+            <summary>
+            Motor Numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.ExaminationValidityDate">
+            <summary>
+            Muayne geçerlilik tariih
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.Bank">
+            <summary>
+            Banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.IBAN">
+            <summary>
+            IBAN
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.Amount">
+            <summary>
+            Tutar
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.IsKDV">
+            <summary>
+            KDV Var mı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.KDVRate">
+            <summary>
+            KDV Oranı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.IsPledge">
+            <summary>
+            Rehin Var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.PledgeAmount">
+            <summary>
+            Rehin tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.PledgeBank">
+            <summary>
+            Rehin olan banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.MTVDebt">
+            <summary>
+            MTV Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.MTVDebtAmount">
+            <summary>
+            MTV Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.TPCDebt">
+            <summary>
+            TPC Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.TPCDebtAmount">
+            <summary>
+            TPC Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.RegistrationDate">
+            <summary>
+            Tescil Tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.LicenseFileBase64">
+            <summary>
+            Tuhsat Dosyası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.TramerFileBase64">
+            <summary>
+            Tramer sorgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.PttKmFileBase64">
+            <summary>
+            PTT km horgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Request.SaleDocumentRequest.ExpertPdfFileBase64">
+            <summary>
+            Expertiz PDF Dosyanın Url'i
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.LicenseOwnerName">
+            <summary>
+            Ruhsat Sahibi Adi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.LicenseOwnerSurname">
+            <summary>
+            Ruhsat Sahibi Soyadı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.ChassisNumber">
+            <summary>
+            Şasi numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.EngineNumber">
+            <summary>
+            Motor Numarası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.ExaminationValidityDate">
+            <summary>
+            Muayne geçerlilik tariih
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.Bank">
+            <summary>
+            Banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.IBAN">
+            <summary>
+            IBAN
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.Amount">
+            <summary>
+            Tutar
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.IsKDV">
+            <summary>
+            KDV Var mı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.KDVRate">
+            <summary>
+            KDV Oranı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.IsPledge">
+            <summary>
+            Rehin Var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.PledgeAmount">
+            <summary>
+            Rehin tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.PledgeBank">
+            <summary>
+            Rehin olan banka
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.MTVDebt">
+            <summary>
+            MTV Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.MTVDebtAmount">
+            <summary>
+            MTV Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.TPCDebt">
+            <summary>
+            TPC Borcu var mı?
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.TPCDebtAmount">
+            <summary>
+            TPC Borç tutarı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.RegistrationDate">
+            <summary>
+            Tescil Tarihi
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.LicenseFileUrl">
+            <summary>
+            Tuhsat Dosyası
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.TramerFileUrl">
+            <summary>
+            Tramer sorgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.PttKmFileUrl">
+            <summary>
+            PTT km horgulama görseli
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.SaleDocument.Response.SaleDocumentResponse.ExpertPdfFileUrl">
+            <summary>
+            Expertiz PDF Dosyanın Url'i
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Dto.GlobalSettingDto.GlobalCarMarj">
+            <summary>
+            Aracın genel marj değeri
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Dto.GlobalSettingDto.RetailPercent">
+            <summary>
+            Parakente fiyatı hesaplama
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentByModelRequest.Segment">
+            <summary>
+            1=B, 2=C, 3=D, SUV-, 4=D+, 5=E SUV+
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.HoodPainted">
+            <summary>
+            Kaput Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.HoodChanged">
+            <summary>
+            Kaput Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.TrunkPainted">
+            <summary>
+            Bagaj Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.TrunkChanged">
+            <summary>
+            Bagaj Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.CeilingPainted">
+            <summary>
+            Tavan Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Request.SetSegmentDepreciationRequest.CeilingChanged">
+            <summary>
+            Tavan Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.HoodPainted">
+            <summary>
+            Kaput Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.HoodChanged">
+            <summary>
+            Kaput Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.TrunkPainted">
+            <summary>
+            Bagaj Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.TrunkChanged">
+            <summary>
+            Bagaj Değişmiş
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.CeilingPainted">
+            <summary>
+            Tavan Boyalı
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.Setting.Response.SegmentDepreciationsResponse.CeilingChanged">
+            <summary>
+            Tavan Değişmiş
+            </summary>
+        </member>
+        <member name="M:CAF.Core.ViewModel.User.Request.AddUserRequest.ToEntity">
+            <summary>
+            gönderilen şifreyi md5 ile şifreler
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CAF.Core.ViewModel.User.Request.NewPasswordByResetCodeRequest.ResetCode">
+            <summary>
+            Şifre sıfırlama kodu
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.User.Request.NewPasswordByResetCodeRequest.NewPassword">
+            <summary>
+            Yeni şifre
+            </summary>
+        </member>
+        <member name="P:CAF.Core.ViewModel.User.Request.NewPasswordByResetCodeRequest.ConfirmNewPassword">
+            <summary>
+            Yeni şifreyi doğrula
+            </summary>
+        </member>
+    </members>
+</doc>

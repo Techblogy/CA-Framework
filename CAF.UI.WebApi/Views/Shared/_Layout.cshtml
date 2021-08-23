@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+    var actionName = (string)ViewContext.RouteData.Values["Action"];
+    var controllerName = (string)ViewContext.RouteData.Values["Controller"];
+}
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="msapplication-TileColor" content="#162946" />
+    <meta name="theme-color" content="#e72a1a" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="Duplex VehiclesOptimized" content="320" />
+    <meta name="description"
+          content=".NET Core Clean Architecture Framework." />
+    <meta name="keywords"
+          content="layered architecture, clean architecture, architectural framework, DotNet Core Framework, .NET Core Architecture" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet" />
+    <link rel="icon" href="~/images/theme/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="~/images/theme/favicon.ico" type="image/x-icon" />
+    <title>Clean Architecture | @ViewData["Title"]</title>
+   
+    @RenderSection("CustomHead", false)
+</head>
+
+<body>
+    <section>
+        <header class="">
+        </header>
+    </section>
+    <div id="homepage">
+        @RenderBody()
+    </div>
+    <section>
+        <footer class="">          
+            
+        </footer>
+    </section>
+</body>
+
+</html>

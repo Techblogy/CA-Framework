@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\workspaces\CA-Framework\CAF.Core\CAF.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Constant\MailTemplates\ForgetPasswordMail.html" />
+    <None Remove="Constant\MailTemplates\MailTemplate.html" />
+    <None Remove="CAF.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Constant\MailTemplates\ForgetPasswordMail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Constant\MailTemplates\MailTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAF.Core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ExtensionCore" Version="1.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.0.0-preview5" />
+    <PackageReference Include="Hangfire" Version="1.7.14" />
+    <PackageReference Include="MailKit" Version="2.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.11" />
+    <PackageReference Include="MimeKit" Version="2.9.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NLog" Version="4.7.2" />
+    <PackageReference Include="NPOI" Version="2.4.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
+    <PackageReference Include="Slugify.Core" Version="3.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+    <PackageReference Include="Wangkanai.Detection" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attribute\" />
+    <Folder Include="Constant\Files\" />
+    <Folder Include="Exception\" />
+    <Folder Include="Validation\Public\" />
+    <Folder Include="Validation\Setting\" />
+    <Folder Include="ViewModel\AccessToken\" />
+    <Folder Include="ViewModel\CacheObject\Response\" />
+    <Folder Include="ViewModel\RequestLog\" />
+    <Folder Include="ViewModel\Setting\Request\" />
+    <Folder Include="ViewModel\Setting\Response\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.4.4" />
+    <PackageReference Include="DeryaBilisim.BiBayim.Integration.Standart" Version="2.1.0" />
+    <PackageReference Include="ExtensionCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="3.1.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+    <PackageReference Include="NPOI" Version="2.4.1" />
+    <PackageReference Include="HangFire" Version="1.7.14" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CAF.Core\CAF.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CAF.UI.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetMakes">
+            <summary>
+            Indicatada olan araç markaları listeleneir
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.NewCarMakes(CAF.Core.Service.IGuruService)">
+            <summary>
+            Elimizdeki sıfır araçların marka listesi
+            </summary>
+            <param name="guruService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetAllCarMakes(CAF.Core.Service.IGuruService)">
+            <summary>
+            İkinci el veya sıfır ayırmakksızın elimdeki araçların marka listesini döner
+            </summary>
+            <param name="guruService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.UsedCarMakes(CAF.Core.Service.IGuruService)">
+            <summary>
+            İkinci elde elimzdeki araçların markaları listelenir.
+            </summary>
+            <param name="guruService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetTransmissions">
+            <summary>
+            Vites türleri döner. Sabittir otomatik, yarı otomatik ve manuel olarak liste döner. İlerisi için uca bağlanmıştır.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetBodies">
+            <summary>
+            Araç kasa tiplerini listeler. Indicata tarafında gelen kasa tiplerini döner
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetFuels">
+            <summary>
+            Yakıt türlerini listeler. Sabittir ancak ileride dinamik olma durumuna göre uç yazılmıştır.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.SendGuruCarRequest(CAF.Core.ViewModel.GuruCarRequest.Request.AddGuruCarRequest,CAF.Core.Service.IGuruCarRequestService)">
+            <summary>
+            Son fiyatı gör butonu ile tetiklenir. Müşterinin bir araçla ilgilendiğini belirtir.
+            </summary>
+            <param name="request"></param>
+            <param name="guruCarRequestService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetNewCarModels(System.String,CAF.Core.Service.INewCarModelService)">
+            <summary>
+            Sıfır araçların modellerini listelmek. Örn: Corolla, Yaris vb.
+            </summary>
+            <param name="makeName"></param>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.SearchGuruCars(CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest)">
+            <summary>
+            Stoğumuzdaki tüm aaçların filtrelenmesi. İkinci el veya sıfır fark etmez tüm araçlar filtrelenebilir. <see cref="T:CAF.Core.ViewModel.Guru.Request.GuruCarSearchRequest"/> nesnesi üzerinde ayrımı yapan alanlar mevcuttur.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.PublicController.GetGuruCarDetail(System.Int32)">
+            <summary>
+            stoklarımzıda olan bir aracın detayını almak. Guruda olan araç
+            </summary>
+            <param name="guruId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.SettingsController.AddStockMenu(CAF.Core.ViewModel.CarStockStatu.Request.AddCarStockStatuRequest,CAF.Core.Service.ICarStockStatuService)">
+            <summary>
+            Gurudaki araçların satın almak için oluşan taleplerin menü eklemesi
+            </summary>
+            <param name="request"></param>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.SettingsController.StockUpdateMenu(CAF.Core.ViewModel.CarStockStatu.Request.UpdateCarStockStatuRequest,CAF.Core.Service.ICarStockStatuService)">
+            <summary>
+            Gurudaki araçların satın almak için oluşan taleplerin menü güncellemesi
+            </summary>
+            <param name="request"></param>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.SettingsController.DeleteStockMenu(System.Guid,CAF.Core.Service.ICarStockStatuService)">
+            <summary>
+            Gurudaki araçların satın almak için oluşan taleplerin menü silinmesi
+            </summary>
+            <param name="id"></param>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.SettingsController.GetStokMenus(CAF.Core.Service.ICarStockStatuService)">
+            <summary>
+            Gurudaki araçların satın almak için oluşan taleplerin menülerin listesi
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAF.UI.WebApi.Controllers.api.SettingsController.SetNewCarModel(CAF.Core.Service.INewCarModelService,CAF.Core.ViewModel.NewCarModel.Request.NewCarModelRequest)">
+            <summary>
+            Modellere resim yükleme için kullanılır. Gönderilen Marka ve Model bilgisine resim ilişkilendirilir. Guru sisteminde öyle bir marka ve model olmasına gerke yoktur. Guru stoğuna düştüğü an websitesinde resimi ile görüntülenir
+            </summary>
+            <param name="service"></param>
+            <param name="request">http request body</param>
+            <returns></returns>
+        </member>
+        <member name="P:CAF.UI.WebApi.Filters.OutputCacheFilter.ExpiryHours">
+            <summary>
+            Default 3 Haours
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var openCarSalePanel = Context.Request.Query.Keys.Any(x => x == "arac-sat") && Context.Request.Query["arac-sat"] == "1";
+}
+
+<h2>Clean Architecture Framework</h2>
