@@ -224,6 +224,7 @@ namespace CAF.UI.WebApi
                 options.Filters.Add(new ErrorFilter());
                 options.Filters.Add(new ValidationFilter());
                 options.Filters.Add(new AccessTokenFilter());
+                options.Filters.Add(new DBTransactionFilter());
 
 
                 options.Filters.Add(new ProducesResponseTypeAttribute((int)System.Net.HttpStatusCode.OK));

@@ -1,4 +1,5 @@
-﻿using CAF.Core.Utilities;
+﻿using CAF.Core.Extensions;
+using CAF.Core.Utilities;
 using CAF.EFRepository;
 using CAF.MongoRepository.Core;
 
@@ -7,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using System;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CAF.Application.Dependency
 {
@@ -19,6 +22,11 @@ namespace CAF.Application.Dependency
             string connectionString = configuration.GetConnectionString("DbConnection");
             MongoRepository.Core.MongoMapping.SetMapping();
             services.AddDbContext<EFDatabaseContext>(x => x.UseSqlServer(connectionString));
+            services.AddScoped<IDbConnection>((serviceProvider) =>
+            {
+                return new SqlConnection(connectionString);
+            });
+
             Environment.SetEnvironmentVariable("EF_CONNECTION_STRING", connectionString);
             services.AddSingleton<IAppSettings>(serviceProvider => configuration.GetSection("AppSettings").Get<AppSettings>());
             services.AddScoped<IMongoDBContext, MongoDBContext>();
