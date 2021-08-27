@@ -22,10 +22,6 @@ namespace CAF.Application.Dependency
             string connectionString = configuration.GetConnectionString("DbConnection");
             MongoRepository.Core.MongoMapping.SetMapping();
             services.AddDbContext<EFDatabaseContext>(x => x.UseSqlServer(connectionString));
-            services.AddScoped<IDbConnection>((serviceProvider) =>
-            {
-                return new SqlConnection(connectionString);
-            });
 
             Environment.SetEnvironmentVariable("EF_CONNECTION_STRING", connectionString);
             services.AddSingleton<IAppSettings>(serviceProvider => configuration.GetSection("AppSettings").Get<AppSettings>());

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace CAF.UI.WebApi.Filters
 {
@@ -14,20 +15,13 @@ namespace CAF.UI.WebApi.Filters
     {
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var transaction = (IDbTransaction)context.HttpContext.RequestServices.GetService(typeof(IDbTransaction));
-
-            var connection = transaction.Connection;
-            if (connection.State != ConnectionState.Open)
-                throw new NotSupportedException("The provided connection was not open!");
-
-            var executedContext = await next.Invoke();
-            if (executedContext.Exception == null || executedContext.Exception is NotRollbackException)
+            using (TransactionScope scope = new TransactionScope())
             {
-                transaction.Commit();
-            }
-            else
-            {
-                transaction.Rollback();
+                var executedContext = await next.Invoke();
+                if (executedContext.Exception == null || executedContext.Exception is NotRollbackException)
+                {
+                    scope.Complete();
+                }
             }
         }
     }
